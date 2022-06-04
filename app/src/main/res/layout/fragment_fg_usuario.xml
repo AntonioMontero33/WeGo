@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fgUsuario">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+
+        <TextView
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:textAlignment="center"
+            android:text="Datos de Ususario"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/koulen"
+            />
+
+        <ImageView
+            android:layout_width="198dp"
+            android:layout_height="151dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/userbig" />
+
+        <TextView
+            style="@style/infoText"
+            android:id="@+id/txtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textSize="36dp"
+            android:text="Correo"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                    style="@style/infoText"
+                    android:id="@+id/txtNombre"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="40dp"
+                    android:text="Nombres"
+                    />
+            <TextView
+                    style="@style/infoText"
+                    android:id="@+id/txtApellido"
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="40dp"
+                    android:text="Apellidos"
+                    />
+        </LinearLayout>
+
+        <TextView
+            style="@style/infoText"
+            android:id="@+id/txtEdad"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Edad"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mainHome"
+        android:icon="@drawable/home"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/mainEvento"
+        android:icon="@drawable/mas"
+        android:title="Crear Evento" />
+    <item
+        android:id="@+id/mainUsuario"
+        android:icon="@drawable/user"
+        android:title="Perfil" />
+    <item
+        android:id="@+id/mainConfiguracion"
+        android:icon="@drawable/confi"
+        android:title="Configuracion" />
+</menu>
