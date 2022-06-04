@@ -2,11 +2,19 @@ package com.example.wego;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -54,11 +62,37 @@ public class fgEvento extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
+    EditText titulo,hora,fecha,descripcion,regla,recomendacion,ubicacion,direccion,tags;
+    Button crear;
+    ImageView imagenEvento;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fg_evento, container, false);
+        //return inflater.inflate(R.layout.fragment_fg_evento, container, false);
+        View view = inflater.inflate(R.layout.fragment_fg_evento,container, false);
+        titulo=view.findViewById(R.id.txtTitulo);
+        hora=view.findViewById(R.id.txtHora);
+        fecha=view.findViewById(R.id.txtFecha);
+        descripcion=view.findViewById(R.id.txtDescripcion);
+        regla=view.findViewById(R.id.txtRegla);
+        recomendacion=view.findViewById(R.id.txtRecomendaciones);
+        ubicacion=view.findViewById(R.id.txtUbicacion);
+        direccion=view.findViewById(R.id.txtDireccion);
+        tags=view.findViewById(R.id.txtEtiqueta);
+        crear=view.findViewById(R.id.btnCrear);
+        imagenEvento=view.findViewById(R.id.imgEvento);
+        return view;
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        return super.onOptionsItemSelected(item);
     }
 }
