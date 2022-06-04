@@ -7,6 +7,19 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.wego.Clases.Evento;
+import com.example.wego.Clases.Usuario;
+import com.google.firebase.FirebaseApp;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.UUID;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,50 +28,61 @@ import android.view.ViewGroup;
  */
 public class fgEvento extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    FirebaseDatabase firebaseDatabase;
+    DatabaseReference databaseReference;
+    TextView crear;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public fgEvento() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment fgEvento.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static fgEvento newInstance(String param1, String param2) {
-        fgEvento fragment = new fgEvento();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    public void onCreate(Bundle savedInstanceState) {super.onCreate(savedInstanceState);}
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fg_evento, container, false);
+
+
+        View rootview = inflater.inflate(R.layout.fragment_fg_evento, container, false);
+        inicializarFirebase();
+
+
+        crear = rootview.findViewById(R.id.txtCrear);
+
+
+
+
+
+
+        Date firstDate1 = new Date(2002, 1, 1);
+        ArrayList<String> reglas1 = new ArrayList<String>();
+        ArrayList<String> tags1 = new ArrayList<String>();
+
+        Evento event = new Evento();
+        event.setIdEvento(UUID.randomUUID().toString());
+        event.setTituloEvento("GranDiesta");
+        event.setFechaEvento(firstDate1);
+        event.setDescripcionEvento("DescripcionEvento1");
+        event.setRegla(reglas1);
+        event.setRecomendacion("123434Reco");
+        event.setUbicacion("123Ubi");
+        event.setDirccion("123Direc");
+        event.setTags(tags1);
+
+        crear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("Evento").child(event.getIdEvento()).setValue(event);
+            }
+        });
+
+
+        return rootview;
     }
+    private void inicializarFirebase() {
+        FirebaseApp.initializeApp(getContext());
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        databaseReference = firebaseDatabase.getReference();
+    }
+
 }

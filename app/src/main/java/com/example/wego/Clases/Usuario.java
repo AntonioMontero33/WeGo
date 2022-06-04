@@ -11,6 +11,9 @@ public class Usuario {
     private String edadUsuario;
     private ArrayList<Usuario> conocidos;
 
+    public Usuario() {
+    }
+
     public Usuario(String idUsuario, String nombreUsuario, String apellidoUsuario, String descripcionUsuario, String correoUsuario, String edadUsuario, ArrayList<Usuario> conocidos) {
         this.idUsuario = idUsuario;
         this.nombreUsuario = nombreUsuario;

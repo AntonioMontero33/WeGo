@@ -1,6 +1,7 @@
 package com.example.wego.Clases;
 
 import java.sql.Time;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Evento {
@@ -9,13 +10,16 @@ public class Evento {
     private Date fechaEvento;
     private Time horaEvento;
     private String descripcionEvento;
-    private String regla;
+    private ArrayList<String> regla;
     private String recomendacion;
     private String ubicacion;
     private String dirccion;
-    private String tags;
+    private ArrayList<String> tags;
 
-    public Evento(String idEvento, String tituloEvento, Date fechaEvento, Time horaEvento, String descripcionEvento, String regla, String recomendacion, String ubicacion, String dirccion, String tags) {
+    public Evento() {
+    }
+
+    /*public Evento(String idEvento, String tituloEvento, Date fechaEvento, Time horaEvento, String descripcionEvento, String regla, String recomendacion, String ubicacion, String dirccion, String tags) {
         this.idEvento = idEvento;
         this.tituloEvento = tituloEvento;
         this.fechaEvento = fechaEvento;
@@ -26,7 +30,7 @@ public class Evento {
         this.ubicacion = ubicacion;
         this.dirccion = dirccion;
         this.tags = tags;
-    }
+    }*/
 
     public String getIdEvento() {
         return idEvento;
@@ -68,11 +72,11 @@ public class Evento {
         this.descripcionEvento = descripcionEvento;
     }
 
-    public String getRegla() {
+    public ArrayList<String> getRegla() {
         return regla;
     }
 
-    public void setRegla(String regla) {
+    public void setRegla(ArrayList<String> regla) {
         this.regla = regla;
     }
 
@@ -100,11 +104,11 @@ public class Evento {
         this.dirccion = dirccion;
     }
 
-    public String getTags() {
+    public ArrayList<String> getTags() {
         return tags;
     }
 
-    public void setTags(String tags) {
+    public void setTags(ArrayList<String> tags) {
         this.tags = tags;
     }
 }
