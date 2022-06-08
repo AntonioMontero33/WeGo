@@ -10,11 +10,12 @@ public class Evento {
     private Date fechaEvento;
     private Time horaEvento;
     private String descripcionEvento;
-    private ArrayList<String> regla;
-    private String recomendacion;
-    private String ubicacion;
-    private String dirccion;
-    private ArrayList<String> tags;
+    private ArrayList<String> reglaEvento;
+    private String recomendacionEvento;
+    private String ubicacionEvento;
+    private String dirccionEvento;
+    private String referenciaEvento;
+    private ArrayList<String> tagsEvento;
 
     public Evento() {
     }
@@ -72,43 +73,51 @@ public class Evento {
         this.descripcionEvento = descripcionEvento;
     }
 
-    public ArrayList<String> getRegla() {
-        return regla;
+    public ArrayList<String> getReglaEvento() {
+        return reglaEvento;
     }
 
-    public void setRegla(ArrayList<String> regla) {
-        this.regla = regla;
+    public void setReglaEvento(ArrayList<String> reglaEvento) {
+        this.reglaEvento = reglaEvento;
     }
 
-    public String getRecomendacion() {
-        return recomendacion;
+    public String getRecomendacionEvento() {
+        return recomendacionEvento;
     }
 
-    public void setRecomendacion(String recomendacion) {
-        this.recomendacion = recomendacion;
+    public void setRecomendacionEvento(String recomendacionEvento) {
+        this.recomendacionEvento = recomendacionEvento;
     }
 
-    public String getUbicacion() {
-        return ubicacion;
+    public String getUbicacionEvento() {
+        return ubicacionEvento;
     }
 
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
+    public void setUbicacionEvento(String ubicacionEvento) {
+        this.ubicacionEvento = ubicacionEvento;
     }
 
-    public String getDirccion() {
-        return dirccion;
+    public String getDirccionEvento() {
+        return dirccionEvento;
     }
 
-    public void setDirccion(String dirccion) {
-        this.dirccion = dirccion;
+    public void setDirccionEvento(String dirccionEvento) {
+        this.dirccionEvento = dirccionEvento;
     }
 
-    public ArrayList<String> getTags() {
-        return tags;
+    public ArrayList<String> getTagsEvento() {
+        return tagsEvento;
     }
 
-    public void setTags(ArrayList<String> tags) {
-        this.tags = tags;
+    public void setTagsEvento(ArrayList<String> tagsEvento) {
+        this.tagsEvento = tagsEvento;
+    }
+
+    public String getReferenciaEvento() {
+        return referenciaEvento;
+    }
+
+    public void setReferenciaEvento(String referenciaEvento) {
+        this.referenciaEvento = referenciaEvento;
     }
 }

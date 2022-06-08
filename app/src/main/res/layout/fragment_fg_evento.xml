@@ -62,6 +62,7 @@
                         android:id="@+id/txtHora"
                         android:layout_width="176dp"
                         android:layout_height="50dp"
+                        android:inputType="time"
                         android:background="@drawable/border"
                         android:fontFamily="@font/dosis"
                         android:hint="hh:mm"
@@ -75,6 +76,7 @@
                         android:background="@drawable/border"
                         android:fontFamily="@font/dosis"
                         android:hint="dd/mm/aaaa"
+                        android:inputType="date"
                         tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
 
