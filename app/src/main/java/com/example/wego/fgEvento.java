@@ -18,7 +18,10 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
 
@@ -27,7 +30,7 @@ public class fgEvento extends Fragment {
 
     FirebaseDatabase firebaseDatabase;
     DatabaseReference databaseReference;
-    TextView crear;
+    TextView crear,tituloevento,hora,descripcion,reglas ,recomendaciones,ubicacion, direccion,referencia, tags,fecha;
 
 
     @Override
@@ -45,13 +48,48 @@ public class fgEvento extends Fragment {
 
 
         crear = rootview.findViewById(R.id.txtCrear);
+        tituloevento=rootview.findViewById(R.id.txtTitulo);
+        hora=rootview.findViewById(R.id.txtHora);
+        descripcion=rootview.findViewById(R.id.txtDescripcion);
+        reglas=rootview.findViewById(R.id.txtRegla);
+        recomendaciones=rootview.findViewById(R.id.txtRecomendaciones);
+        ubicacion=rootview.findViewById(R.id.txtUbicacion);
+        direccion=rootview.findViewById(R.id.txtDireccion);
+        referencia=rootview.findViewById(R.id.txtReferencia);
+        tags=rootview.findViewById(R.id.txtEtiqueta);
+        fecha=rootview.findViewById(R.id.txtFecha);
+
+
+
+        Evento evento = new Evento();
+        String tituloEvento=tituloevento.getText().toString();
+        Date fechaEvento =evento.getFechaEvento();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String strDate = dateFormat.format(fechaEvento);
+        fecha.setText(strDate);
+        Date horaEvento =evento.getFechaEvento();
+        DateFormat timeFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String strHora = timeFormat.format(horaEvento);
+        fecha.setText(strHora);
+        String descipcionEvento=descripcion.getText().toString();
+        String reglaEvento= reglas.getText().toString();
+        String recomendacionEvento=recomendaciones.getText().toString();
+        String ubicacionEvento=ubicacion.getText().toString();
+        String direccionEvento=direccion.getText().toString();
+        String referenciaEvento=referencia.getText().toString();
+        String tagsEvento=tags.getText().toString();
 
 
 
 
 
 
-        Date firstDate1 = new Date(2002, 1, 1);
+
+
+
+
+
+        /*Date firstDate1 = new Date(2002, 1, 1);
         ArrayList<String> reglas1 = new ArrayList<String>();
         ArrayList<String> tags1 = new ArrayList<String>();
 
@@ -60,16 +98,16 @@ public class fgEvento extends Fragment {
         event.setTituloEvento("GranDiesta");
         event.setFechaEvento(firstDate1);
         event.setDescripcionEvento("DescripcionEvento1");
-        event.setRegla(reglas1);
-        event.setRecomendacion("123434Reco");
-        event.setUbicacion("123Ubi");
-        event.setDirccion("123Direc");
-        event.setTags(tags1);
+        event.setReglaEvento(reglas1);
+        event.setRecomendacionEvento("123434Reco");
+        event.setUbicacionEvento("123Ubi");
+        event.setDirccionEvento("123Direc");
+        event.setTagsEvento(tags1);*/
 
         crear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseReference.child("Evento").child(event.getIdEvento()).setValue(event);
+                databaseReference.child("Evento").child(evento.getIdEvento()).setValue(evento);
             }
         });
 
