@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlankFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="70dp">
+
+        <TextView
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:textAlignment="center"
+            android:text="Participantes"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/koulen"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_margin="40dp">
+
+                    <TableRow
+                        android:background="@color/purple_200">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/koulen"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:text="Persona"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:fontFamily="@font/koulen"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:gravity="center"/>
+                    </TableRow>
+                    <TableRow
+                        >
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:layout_weight="4"
+                            android:gravity="center"
+                            android:src="@drawable/descarga"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:text="Nombre"
+                            android:layout_width="0dp"
+                            android:layout_height="46dp"
+                            android:textSize="14sp"
+                            android:layout_weight="4"
+                            android:fontFamily="@font/dosis"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+                    </TableRow>
+
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
