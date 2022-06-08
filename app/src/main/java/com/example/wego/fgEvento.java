@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
@@ -52,19 +53,13 @@ public class fgEvento extends Fragment {
 
 
         Date firstDate1 = new Date(2002, 1, 1);
+        Time time = new Time(1,1,1);
         ArrayList<String> reglas1 = new ArrayList<String>();
         ArrayList<String> tags1 = new ArrayList<String>();
 
-        Evento event = new Evento();
-        event.setIdEvento(UUID.randomUUID().toString());
-        event.setTituloEvento("GranDiesta");
-        event.setFechaEvento(firstDate1);
-        event.setDescripcionEvento("DescripcionEvento1");
-        event.setRegla(reglas1);
-        event.setRecomendacion("123434Reco");
-        event.setUbicacion("123Ubi");
-        event.setDirccion("123Direc");
-        event.setTags(tags1);
+        Evento event = new Evento(UUID.randomUUID().toString(),"GranDiesta",firstDate1, time
+                ,"DescripcionEvento1",reglas1,"123Ubi","123Ubi","123Ubi", tags1);
+
 
         crear.setOnClickListener(new View.OnClickListener() {
             @Override

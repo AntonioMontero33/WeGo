@@ -13,6 +13,9 @@ import androidx.annotation.Nullable;
 import com.example.wego.Clases.Evento;
 import com.example.wego.R;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 
@@ -44,8 +47,18 @@ public class ListAdapterHoy extends ArrayAdapter<Evento> {
         TextView txtTitulo = view.findViewById(R.id.cardTitulo);
         txtTitulo.setText(evento.getTituloEvento());
 
+        TextView txtDescripcion = view.findViewById(R.id.cardDescripcion);
+        txtDescripcion.setText(evento.getDescripcionEvento());
+
+        TextView txtFecha = view.findViewById(R.id.cardFecha);
+
+        //Convertir Date to String
+        Date date = evento.getFechaEvento();
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        String strDate = dateFormat.format(date);
+        txtDescripcion.setText(strDate);
 
 
-        return super.getView(position, convertView, parent);
+        return view;
     }
 }
