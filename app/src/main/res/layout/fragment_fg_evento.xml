@@ -29,7 +29,6 @@
                     />
 
                 <ImageView
-                    android:id="@+id/imgEvento"
                     android:layout_width="220dp"
                     android:layout_height="211dp"
                     android:layout_marginLeft="90dp"
@@ -37,7 +36,6 @@
                     android:src="@drawable/evento"/>
 
                 <EditText
-                    android:id="@+id/txtTitulo"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginLeft="20dp"
@@ -59,25 +57,24 @@
                     android:orientation="horizontal">
 
                     <EditText
-                        android:id="@+id/txtHora"
                         android:layout_width="176dp"
                         android:layout_height="50dp"
-                        android:inputType="time"
                         android:background="@drawable/border"
                         android:fontFamily="@font/dosis"
                         android:hint="hh:mm"
                         tools:ignore="TouchTargetSizeCheck" />
 
-                    <EditText
-                        android:id="@+id/txtFecha"
-                        android:layout_width="174dp"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/border"
-                        android:fontFamily="@font/dosis"
-                        android:hint="dd/mm/aaaa"
+                    <DatePicker
+                        android:id="@+id/etPlannedDate"
+                        android:hint="ocultadito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:inputType="date"
-                        tools:ignore="TouchTargetSizeCheck" />
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1" />
+
+
                 </LinearLayout>
 
                 <EditText
