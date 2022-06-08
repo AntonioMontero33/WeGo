@@ -1,5 +1,8 @@
 package com.example.wego.Clases;
 
+
+
+
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,21 +20,20 @@ public class Evento {
     private String referenciaEvento;
     private ArrayList<String> tagsEvento;
 
-    public Evento() {
-    }
 
-    /*public Evento(String idEvento, String tituloEvento, Date fechaEvento, Time horaEvento, String descripcionEvento, String regla, String recomendacion, String ubicacion, String dirccion, String tags) {
+
+    public Evento(String idEvento, String tituloEvento, Date fechaEvento, Time horaEvento, String descripcionEvento, ArrayList<String> regla, String recomendacion, String ubicacion, String dirccion, ArrayList<String> tags) {
         this.idEvento = idEvento;
         this.tituloEvento = tituloEvento;
         this.fechaEvento = fechaEvento;
         this.horaEvento = horaEvento;
         this.descripcionEvento = descripcionEvento;
-        this.regla = regla;
-        this.recomendacion = recomendacion;
-        this.ubicacion = ubicacion;
-        this.dirccion = dirccion;
-        this.tags = tags;
-    }*/
+        this.reglaEvento = regla;
+        this.recomendacionEvento = recomendacion;
+        this.ubicacionEvento = ubicacion;
+        this.dirccionEvento = dirccion;
+        this.tagsEvento = tags;
+    }
 
     public String getIdEvento() {
         return idEvento;
@@ -105,19 +107,19 @@ public class Evento {
         this.dirccionEvento = dirccionEvento;
     }
 
-    public ArrayList<String> getTagsEvento() {
-        return tagsEvento;
-    }
-
-    public void setTagsEvento(ArrayList<String> tagsEvento) {
-        this.tagsEvento = tagsEvento;
-    }
-
     public String getReferenciaEvento() {
         return referenciaEvento;
     }
 
     public void setReferenciaEvento(String referenciaEvento) {
         this.referenciaEvento = referenciaEvento;
+    }
+
+    public ArrayList<String> getTagsEvento() {
+        return tagsEvento;
+    }
+
+    public void setTagsEvento(ArrayList<String> tagsEvento) {
+        this.tagsEvento = tagsEvento;
     }
 }

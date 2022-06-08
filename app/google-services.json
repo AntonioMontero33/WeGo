@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "52980955373",
+    "firebase_url": "https://wego-8b278-default-rtdb.firebaseio.com",
     "project_id": "wego-8b278",
     "storage_bucket": "wego-8b278.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "52980955373-0oira7ilqhlpk8s1nmjl443hfpb3ahpe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wego",
+            "certificate_hash": "9a8af4ce2cbeb584a9a46e08e858182e0ccdb458"
+          }
+        },
         {
           "client_id": "52980955373-272md9joaer73gdqrfu63jhf1uv1opi4.apps.googleusercontent.com",
           "client_type": 3
