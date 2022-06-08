@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.wego.Clases.Evento;
@@ -21,11 +22,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link fgEvento#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class fgEvento extends Fragment {
 
     FirebaseDatabase firebaseDatabase;
@@ -77,6 +74,7 @@ public class fgEvento extends Fragment {
         });
 
 
+
         return rootview;
     }
     private void inicializarFirebase() {
@@ -84,5 +82,6 @@ public class fgEvento extends Fragment {
         firebaseDatabase = FirebaseDatabase.getInstance();
         databaseReference = firebaseDatabase.getReference();
     }
+
 
 }

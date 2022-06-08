@@ -64,14 +64,17 @@
                         android:hint="hh:mm"
                         tools:ignore="TouchTargetSizeCheck" />
 
-                    <EditText
-                        android:layout_width="174dp"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/border"
-                        android:fontFamily="@font/dosis"
-                        android:hint="dd/mm/aaaa"
-                        tools:ignore="TouchTargetSizeCheck" />
+                    <DatePicker
+                        android:id="@+id/etPlannedDate"
+                        android:hint="ocultadito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="date"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:maxLines="1" />
+
+
                 </LinearLayout>
 
                 <EditText
