@@ -9,12 +9,9 @@ public class Usuario {
     private String descripcionUsuario;
     private String correoUsuario;
     private String edadUsuario;
-    private ArrayList<Usuario> conocidos;
+    private String conocidos;
 
-    public Usuario() {
-    }
-
-    public Usuario(String idUsuario, String nombreUsuario, String apellidoUsuario, String descripcionUsuario, String correoUsuario, String edadUsuario, ArrayList<Usuario> conocidos) {
+    public Usuario(String idUsuario, String nombreUsuario, String apellidoUsuario, String descripcionUsuario, String correoUsuario, String edadUsuario, String conocidos) {
         this.idUsuario = idUsuario;
         this.nombreUsuario = nombreUsuario;
         this.apellidoUsuario = apellidoUsuario;
@@ -72,11 +69,11 @@ public class Usuario {
         this.edadUsuario = edadUsuario;
     }
 
-    public ArrayList<Usuario> getConocidos() {
+    public String getConocidos() {
         return conocidos;
     }
 
-    public void setConocidos(ArrayList<Usuario> conocidos) {
+    public void setConocidos(String conocidos) {
         this.conocidos = conocidos;
     }
 }

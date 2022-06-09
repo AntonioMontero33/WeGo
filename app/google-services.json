@@ -23,6 +23,22 @@
           }
         },
         {
+          "client_id": "52980955373-fltu7e2hna8502akktgc0edvbeo3gbta.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wego",
+            "certificate_hash": "730073ee82d50459788e4ff4325e2100bfa4b2ec"
+          }
+        },
+        {
+          "client_id": "52980955373-kkjo0e5l1jeua018hb4bmqlab1vbbpfs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wego",
+            "certificate_hash": "b7d35fde2d2040273438e8947e5d57420fca7cda"
+          }
+        },
+        {
           "client_id": "52980955373-272md9joaer73gdqrfu63jhf1uv1opi4.apps.googleusercontent.com",
           "client_type": 3
         }

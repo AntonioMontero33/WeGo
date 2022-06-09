@@ -38,7 +38,6 @@ public class preLogin extends AppCompatActivity implements GoogleApiClient.OnCon
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pre_login);
-
         imgConfirmar = findViewById(R.id.imgIngresar);
         imgProfile = findViewById(R.id.btnImgProfile);
         btnLoadImage = findViewById(R.id.btnLoadImg);

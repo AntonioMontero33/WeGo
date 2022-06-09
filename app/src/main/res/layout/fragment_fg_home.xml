@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".fgHome">
 
-
     <ListView
         android:id="@+id/listViewHoy"
         android:layout_width="match_parent"
@@ -13,4 +12,6 @@
         >
 
     </ListView>
+
+
 </FrameLayout>

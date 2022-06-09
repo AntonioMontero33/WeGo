@@ -10,29 +10,24 @@ import java.util.Date;
 public class Evento {
     private String idEvento;
     private String tituloEvento;
-    private Date fechaEvento;
-    private Time horaEvento;
+    private String fechaEvento;
+    private String horaEvento;
     private String descripcionEvento;
-    private ArrayList<String> reglaEvento;
     private String recomendacionEvento;
     private String ubicacionEvento;
     private String dirccionEvento;
     private String referenciaEvento;
-    private ArrayList<String> tagsEvento;
 
-
-
-    public Evento(String idEvento, String tituloEvento, Date fechaEvento, Time horaEvento, String descripcionEvento, ArrayList<String> regla, String recomendacion, String ubicacion, String dirccion, ArrayList<String> tags) {
+    public Evento(String idEvento, String tituloEvento, String fechaEvento, String horaEvento, String descripcionEvento, String recomendacionEvento, String ubicacionEvento, String dirccionEvento, String referenciaEvento) {
         this.idEvento = idEvento;
         this.tituloEvento = tituloEvento;
         this.fechaEvento = fechaEvento;
         this.horaEvento = horaEvento;
         this.descripcionEvento = descripcionEvento;
-        this.reglaEvento = regla;
-        this.recomendacionEvento = recomendacion;
-        this.ubicacionEvento = ubicacion;
-        this.dirccionEvento = dirccion;
-        this.tagsEvento = tags;
+        this.recomendacionEvento = recomendacionEvento;
+        this.ubicacionEvento = ubicacionEvento;
+        this.dirccionEvento = dirccionEvento;
+        this.referenciaEvento = referenciaEvento;
     }
 
     public String getIdEvento() {
@@ -51,19 +46,19 @@ public class Evento {
         this.tituloEvento = tituloEvento;
     }
 
-    public Date getFechaEvento() {
+    public String getFechaEvento() {
         return fechaEvento;
     }
 
-    public void setFechaEvento(Date fechaEvento) {
+    public void setFechaEvento(String fechaEvento) {
         this.fechaEvento = fechaEvento;
     }
 
-    public Time getHoraEvento() {
+    public String getHoraEvento() {
         return horaEvento;
     }
 
-    public void setHoraEvento(Time horaEvento) {
+    public void setHoraEvento(String horaEvento) {
         this.horaEvento = horaEvento;
     }
 
@@ -73,14 +68,6 @@ public class Evento {
 
     public void setDescripcionEvento(String descripcionEvento) {
         this.descripcionEvento = descripcionEvento;
-    }
-
-    public ArrayList<String> getReglaEvento() {
-        return reglaEvento;
-    }
-
-    public void setReglaEvento(ArrayList<String> reglaEvento) {
-        this.reglaEvento = reglaEvento;
     }
 
     public String getRecomendacionEvento() {
@@ -113,13 +100,5 @@ public class Evento {
 
     public void setReferenciaEvento(String referenciaEvento) {
         this.referenciaEvento = referenciaEvento;
-    }
-
-    public ArrayList<String> getTagsEvento() {
-        return tagsEvento;
-    }
-
-    public void setTagsEvento(ArrayList<String> tagsEvento) {
-        this.tagsEvento = tagsEvento;
     }
 }

@@ -57,8 +57,8 @@ public class fgEvento extends Fragment {
         ArrayList<String> reglas1 = new ArrayList<String>();
         ArrayList<String> tags1 = new ArrayList<String>();
 
-        Evento event = new Evento(UUID.randomUUID().toString(),"GranDiesta",firstDate1, time
-                ,"DescripcionEvento1",reglas1,"123Ubi","123Ubi","123Ubi", tags1);
+        Evento event = new Evento(UUID.randomUUID().toString(),"GranDiesta","",""
+                ,"DescripcionEvento1","123Ubi","123Ubi","123Ubi","");
 
 
         crear.setOnClickListener(new View.OnClickListener() {
