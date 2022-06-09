@@ -17,9 +17,11 @@
         <entry key="..\:/ANDINA/7MO Semestre/DS3/App Project Final/wego/app/src/main/res/menu/menu_nav_bottom.xml" value="0.25" />
         <entry key="..\:/App Project Final/wego/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/App Project Final/wego/app/src/main/res/layout/evento_cardview.xml" value="0.2" />
-        <entry key="..\:/App Project Final/wego/app/src/main/res/layout/fragment_fg_configuracion.xml" value="0.25416666666666665" />
-        <entry key="..\:/App Project Final/wego/app/src/main/res/layout/fragment_fg_home.xml" value="0.2" />
-        <entry key="..\:/App Project Final/wego/app/src/main/res/layout/fragment_fg_usuario.xml" value="0.1" />
+        <entry key="..\:/App Project Final/wego/app/src/main/res/layout/fragment_fg_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Feren universidad/7mo semestre/WeGo/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/Feren universidad/7mo semestre/WeGo/app/src/main/res/layout/fragment_blank.xml" value="0.11302083333333333" />
+        <entry key="..\:/Feren universidad/7mo semestre/WeGo/app/src/main/res/layout/fragment_descripcion_evento.xml" value="0.25416666666666665" />
+        <entry key="..\:/Feren universidad/7mo semestre/WeGo/app/src/main/res/layout/fragment_fg_home.xml" value="0.11302083333333333" />
       </map>
     </option>
   </component>

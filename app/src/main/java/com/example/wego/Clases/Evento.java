@@ -9,26 +9,37 @@ import java.util.Date;
 
 public class Evento {
     private String idEvento;
-    private String tituloEvento;
+    public String tituloEvento;
+    //private Date fechaEvento;
     private String fechaEvento;
+    //private Time horaEvento;
     private String horaEvento;
     private String descripcionEvento;
+    private String reglaEvento;
     private String recomendacionEvento;
     private String ubicacionEvento;
     private String dirccionEvento;
     private String referenciaEvento;
+    private String tagsEvento;
 
-    public Evento(String idEvento, String tituloEvento, String fechaEvento, String horaEvento, String descripcionEvento, String recomendacionEvento, String ubicacionEvento, String dirccionEvento, String referenciaEvento) {
+    /*public Evento(String idEvento, String tituloEvento, String fechaEvento, String horaEvento, String descripcionEvento, String reglaEvento, String recomendacionEvento, String ubicacionEvento, String dirccionEvento, String referenciaEvento, String tagsEvento) {
         this.idEvento = idEvento;
         this.tituloEvento = tituloEvento;
         this.fechaEvento = fechaEvento;
         this.horaEvento = horaEvento;
         this.descripcionEvento = descripcionEvento;
+        this.reglaEvento = reglaEvento;
         this.recomendacionEvento = recomendacionEvento;
         this.ubicacionEvento = ubicacionEvento;
         this.dirccionEvento = dirccionEvento;
         this.referenciaEvento = referenciaEvento;
+        this.tagsEvento = tagsEvento;
     }
+
+    public Evento() {
+
+    }*/
+
 
     public String getIdEvento() {
         return idEvento;
@@ -70,6 +81,14 @@ public class Evento {
         this.descripcionEvento = descripcionEvento;
     }
 
+    public String getReglaEvento() {
+        return reglaEvento;
+    }
+
+    public void setReglaEvento(String reglaEvento) {
+        this.reglaEvento = reglaEvento;
+    }
+
     public String getRecomendacionEvento() {
         return recomendacionEvento;
     }
@@ -100,5 +119,13 @@ public class Evento {
 
     public void setReferenciaEvento(String referenciaEvento) {
         this.referenciaEvento = referenciaEvento;
+    }
+
+    public String getTagsEvento() {
+        return tagsEvento;
+    }
+
+    public void setTagsEvento(String tagsEvento) {
+        this.tagsEvento = tagsEvento;
     }
 }
