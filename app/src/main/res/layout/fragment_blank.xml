@@ -70,7 +70,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -91,7 +91,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -112,7 +112,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -133,7 +133,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -154,7 +154,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -175,7 +175,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -196,7 +196,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -217,7 +217,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -238,7 +238,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -259,7 +259,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -280,7 +280,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -301,7 +301,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -322,7 +322,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView
@@ -343,7 +343,7 @@
                             android:layout_height="46dp"
                             android:layout_weight="4"
                             android:gravity="center"
-                            android:src="@drawable/descarga"
+                            android:src="@drawable/user"
                             android:textSize="14sp" />
 
                         <TextView

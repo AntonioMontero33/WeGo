@@ -53,10 +53,10 @@ public class ListAdapterHoy extends ArrayAdapter<Evento> {
         TextView txtFecha = view.findViewById(R.id.cardFecha);
 
         //Convertir Date to String
-        Date date = evento.getFechaEvento();
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
-        String strDate = dateFormat.format(date);
-        txtDescripcion.setText(strDate);
+        //Date date = evento.getFechaEvento();
+        //DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");
+        //String strDate = dateFormat.format(date);
+        //txtDescripcion.setText(strDate);
 
 
         return view;

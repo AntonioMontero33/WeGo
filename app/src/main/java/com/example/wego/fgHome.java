@@ -39,7 +39,7 @@ public class fgHome extends Fragment {
 
         eventoList = new ArrayList<Evento>();
 
-        Date firstDate1 = new Date(2002, 1, 1);
+        /*Date firstDate1 = new Date(2002, 1, 1);
         Time time = new Time(4,5,1);
         ArrayList<String> reglas1 = new ArrayList<String>();
         ArrayList<String> tags1 = new ArrayList<String>();
@@ -57,7 +57,7 @@ public class fgHome extends Fragment {
                 ,"DescripcionEvento1",reglas1,"123Ubi","123Ubi","123Ubi", tags1));
 
         listAdapterHoy = new ListAdapterHoy(getActivity(), R.layout.evento_cardview, eventoList);
-        listaHoy.setAdapter(listAdapterHoy);
+        listaHoy.setAdapter(listAdapterHoy);*/
 
 
         return rootview;
