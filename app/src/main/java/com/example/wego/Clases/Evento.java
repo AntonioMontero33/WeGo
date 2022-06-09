@@ -22,7 +22,8 @@ public class Evento {
     private String referenciaEvento;
     private String tagsEvento;
 
-    /*public Evento(String idEvento, String tituloEvento, String fechaEvento, String horaEvento, String descripcionEvento, String reglaEvento, String recomendacionEvento, String ubicacionEvento, String dirccionEvento, String referenciaEvento, String tagsEvento) {
+
+    public Evento(String idEvento, String tituloEvento, String fechaEvento, String horaEvento, String descripcionEvento, String reglaEvento, String recomendacionEvento, String ubicacionEvento, String dirccionEvento, String referenciaEvento, String tagsEvento) {
         this.idEvento = idEvento;
         this.tituloEvento = tituloEvento;
         this.fechaEvento = fechaEvento;
@@ -35,11 +36,6 @@ public class Evento {
         this.referenciaEvento = referenciaEvento;
         this.tagsEvento = tagsEvento;
     }
-
-    public Evento() {
-
-    }*/
-
 
     public String getIdEvento() {
         return idEvento;

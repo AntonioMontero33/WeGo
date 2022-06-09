@@ -100,18 +100,8 @@ public class fgEvento extends Fragment {
                     validacion();
                 }
                 else {
-                    Evento evento = new Evento();
-                    evento.setIdEvento(UUID.randomUUID().toString());
-                    evento.setTituloEvento(tituloEvento);
-                    evento.setFechaEvento(fechaEvento);
-                    evento.setHoraEvento(horaEvento);
-                    evento.setDescripcionEvento(descripcionEvento);
-                    evento.setReglaEvento(reglaEvento);
-                    evento.setRecomendacionEvento(recomendacionEvento);
-                    evento.setUbicacionEvento(ubicacionEvento);
-                    evento.setDirccionEvento(direccionEvento);
-                    evento.setReferenciaEvento(referenciaEvento);
-                    evento.setTagsEvento(tagsEvento);
+                    Evento evento = new Evento(UUID.randomUUID().toString(),tituloEvento,fechaEvento,horaEvento,descripcionEvento,reglaEvento,recomendacionEvento,ubicacionEvento,direccionEvento,referenciaEvento,tagsEvento);
+
                     databaseReference.child("Evento").child(evento.getIdEvento()).setValue(evento);
                     limpiarcajas();
                 }
